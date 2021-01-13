@@ -17,6 +17,11 @@ footer
 	background-color: #F2F2F2;
 }
 
+footer div
+{
+	margin : 15px;
+}
+
 nav
 { 
 	display: flex;
@@ -203,16 +208,24 @@ aside
 	
 }
 
-.filtre a
-{
-
-}
-
 .onglet
 {
 	margin-right: 70px;
-	text-decoration: none;
 }
+
+.onglet a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.onglet a:hover
+{
+	color: #0065FC;
+	border-top: 5px solid #0065FC;
+	padding-top: 58px;
+}
+
 
 #inscription
 {
@@ -257,4 +270,9 @@ button.submit
 	font-weight: bold;
     padding: 0 10px;
 	border-radius: 8px 0 0 8px
+}
+
+p img
+{
+ size: 15px;
 }
