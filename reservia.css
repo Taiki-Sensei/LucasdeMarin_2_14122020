@@ -50,19 +50,23 @@ nav ul {
     align-items: center;
 }
 
+#filtres li a:hover {
+    color: #0065FC;
+}
+
 header img {
     height: 50px;
 }
 
 #flex-haut-de-page {
     display: flex;
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 @media screen and (max-width: 300px){
     #flex-haut-de-page {
-        flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
 }
 
@@ -70,6 +74,8 @@ header img {
     border-radius: 10px;
     background-color: #F2F2F2;
     min-width: 100px;
+    padding: 15px;
+    margin: 15px;
 }
 
 aside {
@@ -79,6 +85,7 @@ aside {
     width: 370px;
     padding: 15px;
     float: right;
+    margin: 15px;
 }
 
 #flex-hebergements {
@@ -86,85 +93,6 @@ aside {
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
-
-/*.carte1
-{
-	block-size: auto;
-	writing-mode: horizontal-tb;
-	background-color: white;
-	border-radius: 10px;
-	background-repeat: no-repeat; 
-	width: 320px; 
-	height: 250px;
-	overflow: hidden;
-	position: relative;
-	margin: 20px;
-}*/
-
-.carte2 {
-    block-size: auto;
-    writing-mode: horizontal-tb;
-    background-color: white;
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    width: 320px;
-    height: 250px;
-    overflow: hidden;
-    position: relative;
-    margin: 20px;
-}
-
-
-/*.carte3
-{
-	block-size: auto;
-	writing-mode: horizontal-tb;
-	background-color: white;
-	border-radius: 10px;
-	background-repeat: no-repeat; 
-	width: 320px; 
-	height: 250px;
-	overflow: hidden;
-    position: relative;
-}*/
-
-
-/*.carte1 img 
-{
-	z-index: 1;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}*/
-
-.carte2 img {
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-
-/*.carte3 img 
-{
-	z-index: 1;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}*/
 
 #activites-marseille {
     display: flex;
@@ -288,6 +216,47 @@ div.carte1>div.infos>p {
     padding: 0;
     margin: 0;
     font-size: 16;
+}
+
+div.carte1>div.infos>img {
+    height: 12px;
+}
+
+div.carte2 {
+    background: #fff;
+    border: 4px solid #fff;
+    width: 320px;
+    height: 250px;
+    border-radius: 15px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+div.carte2>img {
+    object-fit: cover;
+    object-position: left;
+    height: 0;
+    flex: 1 1 0;
+}
+
+div.carte2>div.infos {
+    background: #fff;
+    padding: 10px 3px;
+    flex: 0 0 auto;
+}
+
+div.carte2>div.infos>p {
+    padding: 0;
+    margin: 0;
+    font-size: 16;
+}
+
+div.carte2>div.infos>img {
+    height: 12px;
 }
 
 div.carte3 {
