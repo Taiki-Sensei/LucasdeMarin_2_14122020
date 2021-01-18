@@ -33,12 +33,14 @@ ul {
 nav ul {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     float: right;
 }
 
 #filtres {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 #filtres li {
@@ -64,9 +66,19 @@ header img {
     flex-direction: row;
 }
 
-@media screen and (max-width: 300px){
-    #flex-haut-de-page {
-        flex-direction: row-reverse;
+#flex-haut-de-page li:nth-child(1) {
+    flex : 1 0 0;
+    order: 1;
+}
+
+#flex-haut-de-page li:nth-child(2) {
+    flex : 0 0 370px;
+    order: 2;
+}
+
+@media screen and (max-width: 700px){
+    #flex-haut-de-page li:nth-child(2) {
+        order: 0;
     }
 }
 
