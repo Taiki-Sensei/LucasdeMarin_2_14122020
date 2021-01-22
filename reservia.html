@@ -1,212 +1,262 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="reservia.css" />
     <title>Reservia</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <img src="Images/logo/Reservia@3x.png">
-        <nav>
-            <ul>
-                <li class="onglet"><a href="#hebergements">Hébergements</a></li>
-                <li class="onglet"><a href="#activités">Activités</a></li>
-                <li id="inscription"><a>S'inscrire</a></li>
-            </ul>
-        </nav>
+      <img src="Images/logo/Reservia@3x.png" />
+      <nav>
+        <ul>
+          <li class="onglet"><a href="#hebergements">Hébergements</a></li>
+          <li class="onglet"><a href="#activités">Activités</a></li>
+          <li id="inscription"><a>S'inscrire</a></li>
+        </ul>
+      </nav>
     </header>
     <label for="recherche-lieu">
-			<h3>Trouvez votre hébergement pour des vacances de rêve</h3>
-			<p>En plein centre-ville ou en pleine nature</p>
-		</label>
+      <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+      <p>En plein centre-ville ou en pleine nature</p>
+    </label>
     <form>
-        <i><img src="Images/icones/map-marker-alt-solid.png" id="map"></i>
-        <input class="search" type="text" placeholder="Marseille, France" required />
-        <button class="submit" type="submit">
-				Rechercher
-			</button>
+      <i><img src="Images/icones/map-marker-alt-solid.png" id="map" /></i>
+      <input
+        class="search"
+        type="text"
+        placeholder="Marseille, France"
+        required
+      />
+      <button class="submit" type="submit">Rechercher</button>
     </form>
     <ul id="filtres">
-        <li id="titre-filtre">Filtres</li>
-        <li class="filtre">
-            <a><img src="Images/icones/money-bill-wave-solid.png">Economique</a>
-        </li>
-        <li class="filtre">
-            <a><img src="Images/icones/child-solid.png">Familial</a>
-        </li>
-        <li class="filtre">
-            <a><img src="Images/icones/heart-solid.png">Romantique</a>
-        </li>
-        <li class="filtre">
-            <a><img src="Images/icones/dog-solid.png">Animaux autorisés</a>
-        </li>
+      <li id="titre-filtre">Filtres</li>
+      <li class="filtre">
+        <a><img src="Images/icones/money-bill-wave-solid.png" />Economique</a>
+      </li>
+      <li class="filtre">
+        <a><img src="Images/icones/child-solid.png" />Familial</a>
+      </li>
+      <li class="filtre">
+        <a><img src="Images/icones/heart-solid.png" />Romantique</a>
+      </li>
+      <li class="filtre">
+        <a><img src="Images/icones/dog-solid.png" />Animaux autorisés</a>
+      </li>
     </ul>
-    <strong>Plus de 500 logements sont disponibles dans cette ville</strong>
+    <p id="precision">Plus de 500 logements sont disponibles dans cette ville</p>
     <ul id="flex-haut-de-page">
-        <li>
-            <section id="hebergements-marseille">
-                <h3 id="hebergements">Hébergements à Marseille</h3>
-                <ul id="flex-hebergements">
-                    <li>
-                        <div class="carte1">
-                            <img src="Images/hebergements/lacannebiere.jpg">
-                            <div class="infos">
-                                <p>Auberge la Cannebière</p>
-                                <p>Nuit à partir de 25€</p>
-                                <img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid-grey.png">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="carte1">
-                            <img src="Images/hebergements/hotelduport.jpg">
-                            <div class="infos">
-                                <p>Hôtel du port</p>
-                                <p>Nuit à partir de 52€</p>
-                                <img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="carte1">
-                            <img src="Images/hebergements/lesmouettes.jpg">
-                            <div class="infos">
-                                <p>Hôtel Les mouettes</p>
-                                <p>Nuit à partir de 76€</p>
-                                <img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid-grey.png">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="carte1">
-                            <img src="Images/hebergements/hoteldelamer.jpg">
-                            <div class="infos">
-                                <p>Hôtel de la mer</p>
-                                <p>Nuit à partir de 46€</p>
-                                <img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid-grey.png"><img src="Images/icones/star-solid-grey.png">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="carte1">
-                            <img src="Images/hebergements/lepanier.jpg">
-                            <div class="infos">
-                                <p>Auberge Le Panier</p>
-                                <p>Nuit à partir de 23€</p>
-                                <img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid-grey.png">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="carte1">
-                            <img src="Images/hebergements/chezamina.jpg">
-                            <div class="infos">
-                                <p>Hôtel chez Amina</p>
-                                <p>Nuit à partir de 96€</p>
-                                <img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png">
-                            </div>
-                        </div>
-                    </li>
-                    <ul>
-            </section>
-        </li>
-        <li>
-            <aside>
-                <h3>Les plus populaires</h3>
-                <div class="carte2">
-                    <img src="Images/hebergements/lesoleildumatin.jpg">
-                    <div class="infos">
-                        <p>Hôtel Le soleil du matin</p>
-                        <p>Nuit à partir de 128€</p>
-                        <img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png">
-                    </div>
-                </div>
-                <div class="carte2">
-                    <img src="Images/hebergements/aucoeurdeleau.jpg">
-                    <div class="infos">
-                        <p>Au coeur de l'eau Chambres d'hôtes</p>
-                        <p>Nuit à partir de 71€</p>
-                        <img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid-grey.png">
-                    </div>
-                </div>
-                <div class="carte2">
-                    <img src="Images/hebergements/toutbleuetblanc.jpg">
-                    <div class="infos">
-                        <p>Hôtel Tout bleu et Blanc</p>
-                        <p>Nuit à partir de 68€</p>
-                        <img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid.png"><img src="Images/icones/star-solid-grey.png">
-                    </div>
-                </div>
-            </aside>
-        </li>
-        </ul>
-        <h3 id="activités">Activités à Marseille</i>
-        </h3>
-        <section id="activites-marseille">
-            <div class="carte3">
-                <img src="Images/activites/vieuxport.jpg">
+      <li>
+        <section id="hebergements-marseille">
+          <h3 id="hebergements">Hébergements à Marseille</h3>
+          <ul id="flex-hebergements">
+            <li>
+              <div class="carte1">
+                <img src="Images/hebergements/lacannebiere.jpg" />
                 <div class="infos">
-                    <span>Vieux Port</span>
+                  <p>Auberge la Cannebière</p>
+                  <p>Nuit à partir de 25€</p>
+                  <img src="Images/icones/star-solid.png" /><img
+                    src="Images/icones/star-solid.png"
+                  /><img src="Images/icones/star-solid.png" /><img
+                    src="Images/icones/star-solid.png"
+                  /><img src="Images/icones/star-solid-grey.png" />
                 </div>
-			</div>
-            <div class="carte3">
-                <img src="Images/activites/fortdepomegues.jpg">
+              </div>
+            </li>
+            <li>
+              <div class="carte1">
+                <img src="Images/hebergements/hotelduport.jpg" />
                 <div class="infos">
-                    <span>Fort de Pomègues</span>
+                  <p>Hôtel du port</p>
+                  <p>Nuit à partir de 52€</p>
+                  <img src="Images/icones/star-solid.png" /><img
+                    src="Images/icones/star-solid.png"
+                  /><img src="Images/icones/star-solid.png" /><img
+                    src="Images/icones/star-solid.png"
+                  /><img src="Images/icones/star-solid.png" />
                 </div>
-            </div>
-            <div class="carte3">
-                <img src="Images/activites/ilesdufrioul.jpg">
+              </div>
+            </li>
+            <li>
+              <div class="carte1">
+                <img src="Images/hebergements/lesmouettes.jpg" />
                 <div class="infos">
-                    <span>Îles du Frioul</span>
+                  <p>Hôtel Les mouettes</p>
+                  <p>Nuit à partir de 76€</p>
+                  <img src="Images/icones/star-solid.png" /><img
+                    src="Images/icones/star-solid.png"
+                  /><img src="Images/icones/star-solid.png" /><img
+                    src="Images/icones/star-solid.png"
+                  /><img src="Images/icones/star-solid-grey.png" />
                 </div>
-			</div>
-            <div class="carte3">
-                <img src="Images/activites/parcnationalcalanques.jpg">
+              </div>
+            </li>
+            <li>
+              <div class="carte1">
+                <img src="Images/hebergements/hoteldelamer.jpg" />
                 <div class="infos">
-                    <span>Parc National des Calanques</span>
+                  <p>Hôtel de la mer</p>
+                  <p>Nuit à partir de 46€</p>
+                  <img src="Images/icones/star-solid.png" /><img
+                    src="Images/icones/star-solid.png"
+                  /><img src="Images/icones/star-solid.png" /><img
+                    src="Images/icones/star-solid-grey.png"
+                  /><img src="Images/icones/star-solid-grey.png" />
                 </div>
-			</div>
-            <div class="carte3">
-                <img src="Images/activites/notredamedelagarde.jpg">
+              </div>
+            </li>
+            <li>
+              <div class="carte1">
+                <img src="Images/hebergements/lepanier.jpg" />
                 <div class="infos">
-                    <span>Notre-Dame-de-la-Garde</span>
+                  <p>Auberge Le Panier</p>
+                  <p>Nuit à partir de 23€</p>
+                  <img src="Images/icones/star-solid.png" /><img
+                    src="Images/icones/star-solid.png"
+                  /><img src="Images/icones/star-solid.png" /><img
+                    src="Images/icones/star-solid.png"
+                  /><img src="Images/icones/star-solid-grey.png" />
                 </div>
-            </div>
-            <div class="carte3">
-                <img src="Images/activites/parclongchamp.jpg">
+              </div>
+            </li>
+            <li>
+              <div class="carte1">
+                <img src="Images/hebergements/chezamina.jpg" />
                 <div class="infos">
-                    <span>Parc Longchamp</span>
+                  <p>Hôtel chez Amina</p>
+                  <p>Nuit à partir de 96€</p>
+                  <img src="Images/icones/star-solid.png" /><img
+                    src="Images/icones/star-solid.png"
+                  /><img src="Images/icones/star-solid.png" /><img
+                    src="Images/icones/star-solid.png"
+                  /><img src="Images/icones/star-solid.png" />
                 </div>
-			</div>
+              </div>
+            </li>
+          </ul>
+          <p>Afficher plus</p>
         </section>
-        <footer>
-            <div>
-                <h4>A propos</h4>
-                <ul>
-                    <li>Fonctionnement du site</li>
-                    <li>Conditions générales de vente</li>
-                    <li>Données et confidentialité</li>
-                </ul>
+      </li>
+      <li>
+        <aside>
+          <h3>Les plus populaires</h3>
+          <div class="carte2">
+            <img src="Images/hebergements/lesoleildumatin.jpg" />
+            <div class="infos">
+              <div class="descriptif">
+                <p>Hôtel Le soleil du matin</p>
+                <p>Nuit à partir de 128€</p>
+              </div>
+              <div class="note">
+                <img src="Images/icones/star-solid.png" /><img
+                  src="Images/icones/star-solid.png"
+                /><img src="Images/icones/star-solid.png" /><img
+                  src="Images/icones/star-solid.png"
+                /><img src="Images/icones/star-solid.png" />
+              </div>
             </div>
-            <div>
-                <h4>Nos hébergements</h4>
-                <ul>
-                    <li>Charte qualité</li>
-                    <li>Soumettre votre hôtel</li>
-                </ul>
+          </div>
+          <div class="carte2">
+            <img src="Images/hebergements/aucoeurdeleau.jpg" />
+            <div class="infos">
+              <div class="descriptif">
+                <p>Au coeur de l'eau Chambres d'hôtes</p>
+                <p>Nuit à partir de 71€</p>
+              </div>
+              <div class="note">
+                <img src="Images/icones/star-solid.png" /><img
+                  src="Images/icones/star-solid.png"
+                /><img src="Images/icones/star-solid.png" /><img
+                  src="Images/icones/star-solid.png"
+                /><img src="Images/icones/star-solid-grey.png" />
+              </div>
             </div>
-            <div>
-                <h4>Assistance</h4>
-                <ul>
-                    <li>Centre d'aide</li>
-                    <li>Nous contacter</li>
-                </ul>
+          </div>
+          <div class="carte2">
+            <img src="Images/hebergements/toutbleuetblanc.jpg" />
+            <div class="infos">
+              <div class="descriptif">
+                <p>Hôtel Tout bleu et Blanc</p>
+                <p>Nuit à partir de 68€</p>
+              </div>
+              <div class="note">
+                <img src="Images/icones/star-solid.png" /><img
+                  src="Images/icones/star-solid.png"
+                /><img src="Images/icones/star-solid.png" /><img
+                  src="Images/icones/star-solid.png"
+                /><img src="Images/icones/star-solid-grey.png" />
+              </div>
             </div>
-        </footer>
-</body>
+          </div>
+        </aside>
+      </li>
+    </ul>
+    <h3 id="activités">Activités à Marseille</h3>
+    <section id="activites-marseille">
+      <div class="carte3">
+        <img src="Images/activites/vieuxport.jpg" />
+        <div class="infos">
+          <span>Vieux Port</span>
+        </div>
+      </div>
+      <div class="carte3">
+        <img src="Images/activites/fortdepomegues.jpg" />
+        <div class="infos">
+          <span>Fort de Pomègues</span>
+        </div>
+      </div>
+      <div class="carte3">
+        <img src="Images/activites/ilesdufrioul.jpg" />
+        <div class="infos">
+          <span>Îles du Frioul</span>
+        </div>
+      </div>
+      <div class="carte3">
+        <img src="Images/activites/parcnationalcalanques.jpg" />
+        <div class="infos">
+          <span>Parc National des Calanques</span>
+        </div>
+      </div>
+      <div class="carte3">
+        <img src="Images/activites/notredamedelagarde.jpg" />
+        <div class="infos">
+          <span>Notre-Dame-de-la-Garde</span>
+        </div>
+      </div>
+      <div class="carte3">
+        <img src="Images/activites/parclongchamp.jpg" />
+        <div class="infos">
+          <span>Parc Longchamp</span>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <h4>A propos</h4>
+        <ul>
+          <li>Fonctionnement du site</li>
+          <li>Conditions générales de vente</li>
+          <li>Données et confidentialité</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Nos hébergements</h4>
+        <ul>
+          <li>Charte qualité</li>
+          <li>Soumettre votre hôtel</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Assistance</h4>
+        <ul>
+          <li>Centre d'aide</li>
+          <li>Nous contacter</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
