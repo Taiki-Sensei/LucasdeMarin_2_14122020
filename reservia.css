@@ -1,5 +1,10 @@
 body {
   font-family: Raleway;
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -7,11 +12,19 @@ body {
   src: url("Police/Raleway-VariableFont_wght.ttf");
 }
 
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   background-color: #f2f2f2;
+  padding: 5px;
 }
 
 footer div {
@@ -22,10 +35,9 @@ footer li {
   margin-bottom: 10px;
 }
 
-nav {
+nav > ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
 }
 
 ul {
@@ -45,6 +57,8 @@ nav ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  padding-left: 5px;
 }
 
 #filtres li {
@@ -62,6 +76,7 @@ nav ul {
 
 header img {
   height: 50px;
+  margin: 5px;
 }
 
 #flex-haut-de-page {
@@ -70,18 +85,24 @@ header img {
   flex-direction: row;
 }
 
-#flex-haut-de-page li:nth-child(1) {
+h3#activités {
+  padding-left: 5px;
+}
+
+#flex-haut-de-page > li:nth-child(1) {
   flex: 1 0 0;
   order: 1;
 }
 
-#flex-haut-de-page li:nth-child(2) {
+#flex-haut-de-page > li:nth-child(2) {
   flex: 0 0 370px;
   order: 2;
+  margin: 15px 0;
+  margin-left: 15px;
 }
 
 @media screen and (max-width: 700px) {
-  #flex-haut-de-page li:nth-child(2) {
+  #flex-haut-de-page > li:nth-child(2) {
     order: 0;
   }
 }
@@ -91,7 +112,7 @@ header img {
   background-color: #f2f2f2;
   min-width: 100px;
   padding: 15px;
-  margin: 15px;
+  margin: 15px 0;
 }
 
 #hebergements-marseille > p {
@@ -101,11 +122,8 @@ header img {
 aside {
   border-radius: 10px;
   background-color: #f2f2f2;
+  width: 100%;
   padding: 15px;
-  width: 370px;
-  padding: 15px;
-  float: right;
-  margin: 15px;
 }
 
 #flex-hebergements {
@@ -173,12 +191,12 @@ aside {
 }
 
 .filtre img {
-  height: 12px;
+  height: 30px;
   background-color: #deebff;
   margin-right: 5px;
-  padding: 10px;
-  border: 2px solid #f2f2f2;
+  padding: 5px;
   border-radius: 30px;
+  object-fit: contain;
 }
 
 #map {
@@ -187,8 +205,6 @@ aside {
 
 #titre-filtre {
   font-weight: bold;
-  vertical-align: middle!important;
-  display : inline-block;
 }
 
 .filtre {
@@ -219,6 +235,10 @@ aside {
   color: #0065fc;
 }
 
+label > * {
+  padding-left: 5px;
+}
+
 form {
   display: flex;
   flex-flow: row nowrap;
@@ -227,6 +247,7 @@ form {
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 30px;
+  padding-left: 5px;
 }
 
 i {
@@ -250,13 +271,16 @@ button.submit {
   padding: 0 10px;
 }
 
+ul#flex-hebergements > li {
+  margin: 20px;
+}
+
 div.carte1 {
   background: #fff;
   border: 4px solid #fff;
-  width: 320px;
+  width: 300px;
   height: 250px;
   border-radius: 15px;
-  margin: 50px 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -264,14 +288,18 @@ div.carte1 {
   overflow: hidden;
 }
 
-@media screen and (max-width:500px){
-  ul#flex-hebergements{
-    justify-content: stretch;
+@media screen and (max-width:950px){
+  ul#flex-haut-de-page > li {
+    width: 100%;
+    flex: inherit;
   }
   
+  ul#flex-hebergements > li {
+    width : 100%;
+  }
+
   div.carte1 {
     width : 100%;
-    margin : 20px 7px;
   }
 }
 
@@ -306,13 +334,10 @@ div.carte2 {
   background: #fff;
   border: 4px solid #fff;
   display: flex;
-  width: 320px;
+  width: 100%;
   height: 150px;
   border-radius: 15px;
-  margin-top: 60px;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;  
+  margin-bottom: 10px;  
   justify-content: stretch;
   align-items: stretch;
 }
@@ -355,7 +380,6 @@ div.carte3 {
   background: #fff;
   border: 4px solid #fff;
   border-radius: 15px;
-  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -385,4 +409,40 @@ div.carte3 > div.infos > span {
 
 #precision {
   font-weight: bold;
+  padding-left: 5px;
+}
+
+@media screen and (max-width:950px){
+  ul#flex-haut-de-page > li {
+    width: 100%;
+    flex: auto !important;
+  }
+  
+  ul#flex-hebergements > li {
+    width : 100%;
+  }
+
+  div.carte1 {
+    width : 100%;
+  }
+}
+
+@media screen and (max-width:600px){
+  header > nav, 
+  header > nav > ul {
+    width: 100%;
+  }
+
+  .onglet {
+    width: 50%;
+    margin: 0;
+    text-align: center;
+  }
+
+  #inscription {
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 }
