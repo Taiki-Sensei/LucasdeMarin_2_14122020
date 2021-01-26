@@ -134,6 +134,17 @@ aside {
   padding: 15px;
 }
 
+#titre-et-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#titre-et-logo > img {
+  height: 15px;
+  margin-top: 20px;
+}
+
 #flex-hebergements {
   display: flex;
   justify-content: space-around;
