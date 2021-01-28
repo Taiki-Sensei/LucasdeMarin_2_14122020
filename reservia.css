@@ -140,9 +140,10 @@ aside {
   justify-content: space-between;
 }
 
-#titre-et-logo > img {
-  height: 15px;
-  margin-top: 20px;
+#titre-et-logo > i.fas.fa-chart-line {
+  line-height: 15px;
+  color: black;
+  margin-top: 10px;
 }
 
 #flex-hebergements {
@@ -209,13 +210,14 @@ aside {
   color: red;
 }
 
-.filtre img {
+.filtre i {
   height: 30px;
   background-color: #deebff;
   margin-right: 5px;
   padding: 5px;
   border-radius: 30px;
   object-fit: contain;
+  color: #0065fc;
 }
 
 #map {
@@ -269,11 +271,11 @@ form {
   padding-left: 5px;
 }
 
-i {
+form > i {
   height: 40px;
   width: 40px;
   background: #f2f2f2;
-  color: #fff;
+  color: black;
   text-align: center;
   line-height: 40px !important;
 }
@@ -344,8 +346,15 @@ div.carte1 > div.infos > p:nth-child(1) {
   font-weight: bold;
 }
 
-div.carte1 > div.infos > img {
-  height: 12px;
+div.carte1 > div.infos > i.fas.fa-star {
+  line-height: 12px;
+  color: #0065fc;
+}
+
+
+div.carte1 > div.infos > i.fas.fa-star.grey {
+  line-height: 12px;
+  color: grey;
 }
 
 div.carte2 {
@@ -386,8 +395,14 @@ div.carte2 > div.infos p:nth-child(1) {
   font-weight: bold;
 }
 
-div.carte2 div.note > img {
-  height: 12px;
+div.carte2 div.note > i.fas.fa-star {
+  line-height: 12px;
+  color: #0065fc;
+}
+
+div.carte2 div.note > i.fas.fa-star.grey {
+  line-height: 12px;
+  color: grey;
 }
 
 div.carte2 div.descriptif {
