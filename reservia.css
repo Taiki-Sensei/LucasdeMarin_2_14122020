@@ -475,6 +475,12 @@ div.carte3 > div.infos > a > span {
   font-weight: bold;
 }
 
+div.carte3 > div.infos > a {
+  text-decoration: none;
+  color: black;
+}
+
+
 i.fas.fa-info {
   line-height: 15px;
   color: #0065fc;
