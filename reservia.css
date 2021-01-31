@@ -82,6 +82,8 @@ nav ul {
 #filtres li a {
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: black;
 }
 
 #filtres li a:hover {
@@ -219,11 +221,6 @@ aside {
   grid-row: 4 / 7;
 }
 
-.carte-groupe {
-  display: flex;
-  flex-direction: column;
-}
-
 .fas_fa-swimmer {
   color: red;
 }
@@ -324,6 +321,11 @@ ul#flex-hebergements > li {
   margin: 20px;
 }
 
+#flex-hebergements > li > a {
+  text-decoration: none;
+  color: black;
+}
+
 div.carte1 {
   border: 4px solid #fff;
   width: 300px;
@@ -383,6 +385,11 @@ div.carte1 > div.infos > i.fas.fa-star {
 div.carte1 > div.infos > i.fas.fa-star.grey {
   line-height: 12px;
   color: grey;
+}
+
+aside > a {
+  text-decoration: none;
+  color: black;
 }
 
 div.carte2 {
@@ -449,10 +456,9 @@ div.carte3 {
   overflow: hidden;
 }
 
-div.carte3 > img {
+div.carte3 img {
   object-fit: cover;
   object-position: center;
-  height: 0;
   flex: 1 1 0;
 }
 
@@ -462,7 +468,7 @@ div.carte3 > div.infos {
   flex: 0 0 auto;
 }
 
-div.carte3 > div.infos > span {
+div.carte3 > div.infos > a > span {
   padding: 0;
   margin: 0;
   font-size: 16px;
