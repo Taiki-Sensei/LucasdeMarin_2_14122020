@@ -326,7 +326,7 @@ ul#flex-hebergements > li {
   color: black;
 }
 
-div.carte1 {
+a.carte1 {
   border: 4px solid #fff;
   width: 300px;
   height: 250px;
@@ -348,41 +348,41 @@ div.carte1 {
     width : 100%;
   }
 
-  div.carte1 {
+  a.carte1 {
     width : 100%;
   }
 }
 
-div.carte1 > img {
+a.carte1 > img {
   object-fit: cover;
   object-position: center;
   height: 0;
   flex: 1 1 0;
 }
 
-div.carte1 > div.infos {
+a.carte1 > div.infos {
   background: #fff;
   padding: 10px 3px;
   flex: 0 0 auto;
 }
 
-div.carte1 > div.infos > p {
+a.carte1 > div.infos > p {
   padding-bottom: 5px;
   margin: 0;
   font-size: 16px;
 }
 
-div.carte1 > div.infos > p:nth-child(1) {
+a.carte1 > div.infos > p:nth-child(1) {
   font-weight: bold;
 }
 
-div.carte1 > div.infos > i.fas.fa-star {
+a.carte1 > div.infos > i.fas.fa-star {
   line-height: 12px;
   color: #0065fc;
 }
 
 
-div.carte1 > div.infos > i.fas.fa-star.grey {
+a.carte1 > div.infos > i.fas.fa-star.grey {
   line-height: 12px;
   color: grey;
 }
@@ -392,7 +392,7 @@ aside > a {
   color: black;
 }
 
-div.carte2 {
+a.carte2 {
   background-color: #fff;
   border: 4px solid #fff;
   display: flex;
@@ -404,7 +404,7 @@ div.carte2 {
   align-items: stretch;
 }
 
-div.carte2 > img {
+a.carte2 > img {
   object-fit: cover;
   object-position: center;
   flex-shrink: 0;
@@ -412,39 +412,39 @@ div.carte2 > img {
   height: 100%;
 }
 
-div.carte2 > div.infos {
+a.carte2 > div.infos {
   background: #fff;
   padding: 10px 3px;
   display: flex;
   flex-direction: column;
 }
 
-div.carte2 > div.infos p {
+a.carte2 > div.infos p {
   padding: 0;
   margin: 0;
   font-size: 16px;
   padding-bottom: 5px;
 }
 
-div.carte2 > div.infos p:nth-child(1) {
+a.carte2 > div.infos p:nth-child(1) {
   font-weight: bold;
 }
 
-div.carte2 div.note > i.fas.fa-star {
+a.carte2 div.note > i.fas.fa-star {
   line-height: 12px;
   color: #0065fc;
 }
 
-div.carte2 div.note > i.fas.fa-star.grey {
+a.carte2 div.note > i.fas.fa-star.grey {
   line-height: 12px;
   color: grey;
 }
 
-div.carte2 div.descriptif {
+a.carte2 div.descriptif {
   flex: 1;
 }
 
-div.carte3 {
+a.carte3 {
   border: 4px solid #fff;
   border-radius: 15px;
   display: flex;
@@ -454,30 +454,28 @@ div.carte3 {
   justify-content: space-between;
   align-items: stretch;
   overflow: hidden;
+  text-decoration: none;
+  color: black;
 }
 
-div.carte3 img {
+a.carte3 img {
   object-fit: cover;
   object-position: center;
+  height: 0;
   flex: 1 1 0;
 }
 
-div.carte3 > div.infos {
+a.carte3 > div.infos {
   background: #fff;
   padding: 10px 3px;
   flex: 0 0 auto;
 }
 
-div.carte3 > div.infos > a > span {
+a.carte3 > div.infos > span {
   padding: 0;
   margin: 0;
   font-size: 16px;
   font-weight: bold;
-}
-
-div.carte3 > div.infos > a {
-  text-decoration: none;
-  color: black;
 }
 
 
@@ -510,7 +508,7 @@ i.fas.fa-info {
     width : 100%;
   }
 
-  div.carte1 {
+  a.carte1 {
     width : 100%;
   }
 }
